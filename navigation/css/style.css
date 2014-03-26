@@ -76,15 +76,25 @@ section {
         -webkit-transform-origin: 100% 0%;
         -moz-transform-origin: 100% 0%; }
   #toggle-nav.active i > span.top-left {
-    -webkit-transform: translate(2px, -1px) rotate(45deg) scaleX(1.25); }
+    -webkit-transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
+    -moz-transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
+    transform: translate(2px, -1px) rotate(45deg) scaleX(1.25); }
   #toggle-nav.active i > span.top-right {
-    -webkit-transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25); }
+    -webkit-transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
+    -moz-transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
+    transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25); }
   #toggle-nav.active i > span.middle {
-    -webkit-transform: scaleX(0); }
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0); }
   #toggle-nav.active i > span.bottom-left {
-    -webkit-transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25); }
+    -webkit-transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25);
+    -moz-transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25);
+    transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25); }
   #toggle-nav.active i > span.bottom-right {
-    -webkit-transform: translate(0px, 3px) rotate(45deg) scaleX(1.25); }
+    -webkit-transform: translate(0px, 3px) rotate(45deg) scaleX(1.25);
+    -moz-transform: translate(0px, 3px) rotate(45deg) scaleX(1.25);
+    transform: translate(0px, 3px) rotate(45deg) scaleX(1.25); }
 
 #navigation {
   position: fixed;
@@ -101,15 +111,18 @@ section {
     display: flex;
     display: -webkit-flex;
     -moz-display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    -webkit-flex-flow: column nowrap;
+    -webkit-flex-direction: column;
+    -webkit-flex-wrap: nowrap;
     -webkit-justify-content: flex-start;
     -webkit-align-content: center;
     -webkit-align-items: center;
-    -moz-flex-flow: column nowrap;
+    -moz-flex-direction: column;
+    -moz-flex-wrap: nowrap;
     -moz-justify-content: flex-start;
     -moz-align-content: center;
     -moz-align-items: center; }

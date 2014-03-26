@@ -62,18 +62,28 @@
 	&.active i {
 		> span.top-left {
 			-webkit-transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
+			-moz-transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
+			transform: translate(2px, -1px) rotate(45deg) scaleX(1.25);
 		}
 		> span.top-right {
 			-webkit-transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
+			-moz-transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
+			transform: translate(-2px, -1px) rotate(-45deg) scaleX(1.25);
 		}
 		> span.middle {
 			-webkit-transform: scaleX(0);
+			-moz-transform: scaleX(0);
+			transform: scaleX(0);
 		}
 		> span.bottom-left {
 			-webkit-transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25);
+			-moz-transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25);
+			transform: translate(0px, 3px) rotate(-45deg) scaleX(1.25);
 		}
 		> span.bottom-right {
 			-webkit-transform: translate(0px, 3px) rotate(45deg) scaleX(1.25);
+			-moz-transform: translate(0px, 3px) rotate(45deg) scaleX(1.25);
+			transform: translate(0px, 3px) rotate(45deg) scaleX(1.25);
 		}
 	}
 }
@@ -92,7 +102,7 @@
 		margin: 0;
 		height: 100%;
 		@include display-flex;
-		@include flex-props(column nowrap, flex-start, center, center);
+		@include flex-props(column, nowrap, flex-start, center, center);
 
 		li {
 			@include display-flex;
